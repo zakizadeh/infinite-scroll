@@ -1,0 +1,29 @@
+
+
+ <div class="post-container container text-center " (scroll)="onScroll()">
+<div class="row">
+
+      <div *ngFor="let post of visiblePosts" class="post col-md-6"  >
+        
+              <mat-card class="example-card" *ngIf="post.visible">
+                <mat-card-header>
+                  <mat-card-subtitle>infinite scroll</mat-card-subtitle>
+                  <mat-card-title>Hussein zakizadeh</mat-card-title>
+                </mat-card-header>
+                <mat-card-content>
+                
+                  <h2>{{ post.title }}</h2>
+                  <p>{{ post.content }}</p>
+                  <mat-divider></mat-divider>
+                </mat-card-content>
+              
+                <mat-card-footer>
+                 
+                </mat-card-footer>
+              </mat-card>
+          
+      </div>
+        
+
+  </div>
+  </div> 
